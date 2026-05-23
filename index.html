@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meng.dev</title>
-    <!-- Link Bootstrap CSS di atas -->
+    <title>meng.dev - Premium Web Development</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS Tambahan Untuk Animasi & Efek Kaca (Glassmorphism) -->
+    <style>
+        .float-anim { 
+            animation: float 4s ease-in-out infinite; 
+        }
+        @keyframes float { 
+            0% { transform: translateY(0px); } 
+            50% { transform: translateY(-15px); } 
+            100% { transform: translateY(0px); } 
+        }
+        .tech-badge { 
+            background: rgba(255, 255, 255, 0.6); 
+            backdrop-filter: blur(5px); 
+            border: 1px solid rgba(255, 255, 255, 0.4); 
+            font-weight: 600;
+        }
+    </style>
 </head>
 
-<!-- min-vh-100 dan padding berbeza ikut skrin (p-3 phone, p-md-5 laptop) -->
 <body class="min-vh-100 d-flex flex-column justify-content-between p-3 p-md-5" style="background: linear-gradient(135deg, #e0f7fa 0%, #f7f9fa 100%);">
 
-    <!-- 1. NAVBAR (Guna Komponen Nav Bootstrap Supaya Ada Butang Hamburger Kat Phone) -->
+    <!-- 1. NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-light bg-transparent py-2">
         <div class="container-fluid px-0">
             
@@ -20,22 +36,24 @@
                 — MENG.DEV —
             </a>
 
-            <!-- BUTANG MENU PHONE (Tiga Garis) -->
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <!-- BUTANG MENU PHONE -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- KOTAK MENU TENGAH -->
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <div class="navbar-nav mx-auto my-3 my-md-0 text-center">
+                <div class="navbar-nav mx-auto my-4 my-md-0 text-center gap-3 gap-md-0">
+                    <!-- MENU HOME AKTIF (Garisan Biru) -->
                     <a href="index.html" class="nav-link text-dark fw-bold px-3 active" style="border-bottom: 3px solid #00b4d8; width: fit-content; margin: auto;">HOME</a>
+                    
                     <a href="services.html" class="nav-link text-secondary fw-bold small px-3">SERVICES</a>
-                    <a href="#" class="nav-link text-secondary fw-bold small px-3">ABOUT</a>
-                    <a href="#" class="nav-link text-secondary fw-bold small px-3">CONTACT</a>
+                    <a href="about.html" class="nav-link text-secondary fw-bold small px-3">ABOUT</a>
+                    <a href="contact.html" class="nav-link text-secondary fw-bold small px-3">CONTACT</a>
                 </div>
 
                 <!-- PROFILE KANAN -->
-                <div class="d-flex align-items-center justify-content-center mt-3 mt-md-0">
+                <div class="d-flex align-items-center justify-content-center mt-3 mt-md-0 pb-3 pb-md-0">
                     <span class="fw-bold small text-dark me-2">MENG_CREATIVE</span>
                     <img src="img/Untitled Project - illustrationImage.png" class="rounded-circle border border-2" style="border-color: #00b4d8 !important; width: 35px; height: 35px; object-fit: cover;" alt="Logo Meng">
                 </div>
@@ -44,37 +62,55 @@
         </div>
     </nav>
 
-    <!-- 2. HERO SECTION -->
-    <main class="container-fluid my-5">
-        <!-- text-center kat phone, text-md-start kat laptop -->
-        <div class="row align-items-center text-center text-md-start g-4">
+    <!-- 2. HERO SECTION UTAMA -->
+    <main class="container-fluid my-5 flex-grow-1 d-flex align-items-center">
+        <div class="row align-items-center text-center text-md-start g-4 w-100">
             
-            <!-- KOTAK KIRI: TEKS (Turun bawah kat phone: order-2) -->
-            <div class="col-md-5 order-2 order-md-1">
-                <h1 class="fw-bold lh-1 mb-4" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 800; background: linear-gradient(45deg, #0077b6, #2a9d8f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: calc(2rem + 2vw);">
+            <!-- KOTAK KIRI: TEKS & BUTANG -->
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="badge bg-dark rounded-pill px-3 py-2 mb-3 shadow-sm" style="font-size: 0.8rem; letter-spacing: 1px;">
+                    🚀 Bawa Bisnes Anda Ke Tahap Seterusnya
+                </div>
+                
+                <h1 class="fw-bold lh-1 mb-4" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 800; background: linear-gradient(45deg, #0077b6, #2a9d8f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: calc(2.5rem + 2vw);">
                     DIGITAL<br>
                     FRESH<br>
                     DESIGNS
                 </h1>
-                <p class="text-secondary mb-4 px-3 px-md-0 pe-md-5" style="font-size: 0.95rem; line-height: 1.6;">
+                
+                <p class="text-secondary mb-4 pe-md-5" style="font-size: 1.05rem; line-height: 1.7;">
                     Kami membina laman web moden berkualiti tinggi, mesra pengguna, dan berkuasa tinggi untuk melonjakkan kredibiliti bisnes digital anda.
                 </p>
-                <a href="#contact" class="btn text-white rounded-pill px-4 py-2 fw-bold btn-sm shadow text-decoration-none" style="background: linear-gradient(180deg, #00b4d8 0%, #0077b6 100%);">
-                    MULAKAN BISNES
-                </a>
+                
+                <!-- Butang Tindakan Berkembar -->
+                <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-start gap-3 mt-4">
+                    <a href="services.html" class="btn text-white rounded-pill px-4 py-3 fw-bold shadow" style="background: linear-gradient(180deg, #00b4d8 0%, #0077b6 100%);">
+                        LIHAT PAKEJ KAMI
+                    </a>
+                    <a href="contact.html" class="btn btn-outline-dark rounded-pill px-4 py-3 fw-bold shadow-sm">
+                        BINCANG PROJEK
+                    </a>
+                </div>
+
+                <!-- Lencana Kepercayaan (Trust Badges) -->
+                <div class="mt-5 d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
+                    <span class="badge text-dark rounded-pill py-2 px-3 tech-badge shadow-sm">📱 Mobile Responsive</span>
+                    <span class="badge text-dark rounded-pill py-2 px-3 tech-badge shadow-sm">⚡ Fast Loading</span>
+                    <span class="badge text-dark rounded-pill py-2 px-3 tech-badge shadow-sm">🔒 Secure Setup</span>
+                </div>
             </div>
 
-            <!-- KOTAK KANAN: GAMBAR (Naik atas kat phone: order-1) -->
-            <div class="col-md-7 order-1 order-md-2 position-relative">
-                <div class="rounded-4 overflow-hidden" style="background: transparent;">
-                    <!-- Gambar lutsinar -->
-                    <img src="img/7b34b932d97719b88a8860dde5f188e2-removebg-preview.png" class="img-fluid w-75 w-md-50" alt="Meng Dev Work">
+            <!-- KOTAK KANAN: GAMBAR BERANIMASI -->
+            <div class="col-md-6 order-1 order-md-2 position-relative d-flex justify-content-center justify-content-md-end">
+                <div class="rounded-4 overflow-hidden float-anim" style="background: transparent;">
+                    <!-- Pastikan nama fail gambar ni betul dengan yang ada dalam folder 'img' hang -->
+                    <img src="img/7b34b932d97719b88a8860dde5f188e2-removebg-preview.png" class="img-fluid" style="max-width: 85%; drop-shadow: 0 10px 20px rgba(0,0,0,0.1);" alt="Meng Dev Work">
                 </div>
                 
-                <!-- Teks Tepi Bawah (d-none d-md-block: disorok kat phone supaya tak nampak serabut) -->
-                <div class="position-absolute bottom-0 end-0 p-4 text-end d-none d-md-block">
+                <!-- Teks Tepi Bawah (Hanya muncul kat laptop) -->
+                <div class="position-absolute bottom-0 end-0 p-4 text-end d-none d-md-block float-anim" style="animation-delay: 1s;">
                     <p class="mb-0 fw-bold text-dark small" style="letter-spacing: 1px;">Premium Web Development</p>
-                    <span class="fw-bold" style="font-family: 'Segoe UI', sans-serif; font-size: 1.2rem; color: #2a9d8f;">Fresh & Modern</span>
+                    <span class="fw-bold" style="font-family: 'Segoe UI', sans-serif; font-size: 1.2rem; color: #2a9d8f;">Clean & Modern</span>
                 </div>
             </div>
 
@@ -82,13 +118,12 @@
     </main>
 
     <!-- 3. FOOTER -->
-    <!-- Susun menegak kat phone (flex-column), melintang kat laptop (flex-md-row) -->
-    <footer class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center border-top pt-4 text-secondary small gap-2 text-center">
+    <footer class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center border-top pt-4 text-secondary small gap-2 text-center mt-4">
         <div>&copy; 2026 meng.dev. All rights reserved.</div>
-        <div>Bring Your Business to the Digital Era.</div>
+        <div>Proudly based in Johor, Malaysia.</div>
     </footer>
 
-    <!-- 4. SCRIPTS (Wajib letak sebelum tutup tag body) -->
+    <!-- 4. SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -3,162 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>meng.dev</title>
+    <title>Services - meng.dev</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    
 </head>
-<body class="vh-100 d-flex flex-column justify-content-between p-5" style="background: linear-gradient(135deg, #e0f7fa 0%, #f7f9fa 100%);">
-     <header class="container-fluid d-flex justify-content-between align-items-center">
-        <div class="nav-links">
-            <!-- Warna biru aqua (#00b4d8) untuk menu aktif -->
-            <a href="index.html" class="text-secondary text-decoration-none fw-bold small me-4">HOME</a>
-            <a href="services.html" class="text-dark fw-bold text-decoration-none" style="border-bottom: 3px solid #00b4d8; padding-bottom: 5px;">SERVICES</a>
-            <a href="#" class="text-secondary text-decoration-none fw-bold small ms-4">ABOUT</a>
-            <a href="#" class="text-secondary text-decoration-none fw-bold small ms-4">CONTACT</a>
-        </div>
 
-        <div class="logo">
-            <!-- Font lari sikit bagi nampak tech/aerodynamic -->
-            <span class="fw-black text-dark text-uppercase" style="letter-spacing: 6px; font-weight: 900; font-family: 'Segoe UI', sans-serif;">— MENG.DEV —</span>
-        </div>
+<body class="min-vh-100 d-flex flex-column justify-content-between p-3 p-md-5" style="background: linear-gradient(135deg, #e0f7fa 0%, #f7f9fa 100%);">
 
-        <!-- TUKAR LOGO KAT SINI -->
-        <div class="profile d-flex align-items-center">
-            <span class="fw-bold small text-dark me-2">MENG_CREATIVE</span>
-            <!-- Ganti 'logo-hang.png' dengan nama fail gambar logo hang sendiri -->
-            <!-- Buat masa ni saya letak placeholder gambar bulat berbekal border glow aqua -->
-            <img src="img/Untitled Project - illustrationImage.png" class="rounded-circle border border-2" style="border-color: #00b4d8 !important; width: 35px; height: 35px; object-fit: cover;" alt="Logo Meng">
-        </div>
-    </header>
-          <section class="container py-5" id="services">
-    <!-- Tajuk Section -->
-    <div class="text-center mb-5">
-        <h2 class="fw-black text-uppercase" style="color: #0077b6; letter-spacing: 2px;">Pilihan Pakej Web</h2>
-        <p class="text-secondary">Pilih pelan yang sesuai untuk meroketkan bisnes anda.</p>
-    </div>
+    <!-- 1. NAVBAR RESPONSIVE -->
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent py-2">
+        <div class="container-fluid px-0">
+            
+            <!-- LOGO UTAMA -->
+            <a class="navbar-brand fw-black text-dark text-uppercase" href="index.html" style="letter-spacing: 6px; font-weight: 900; font-family: 'Segoe UI', sans-serif;">
+                — MENG.DEV —
+            </a>
 
-    <!-- 💡 BANNER INFO DOMAIN (Glassmorphism & Gradient Lembut) -->
-    <div class="row justify-content-center mb-5">
-        <div class="col-md-10">
-            <div class="card border-0 rounded-4 shadow-sm p-4 text-center" style="background: linear-gradient(135deg, rgba(0, 180, 216, 0.15), rgba(42, 157, 143, 0.15)); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.6) !important;">
-                <h5 class="fw-bold" style="color: #0077b6;">🤔 Apa itu Domain & Kenapa Kena Ada?</h5>
-                <p class="text-secondary mb-0 mt-2" style="font-size: 0.95rem; line-height: 1.6;">
-                    Bayangkan laman web anda adalah sebuah <strong>Rumah</strong> kedai. <br>
-                    <strong>Domain</strong> pula adalah <em>Alamat Rumah</em> tersebut (contoh: <code>www.kedai-anda.com</code>). 
-                    Tanpa domain, pelanggan tak jumpa kedai anda di internet! Memiliki domain sendiri membuatkan bisnes anda nampak <strong>10x ganda lebih profesional</strong> dan dipercayai berbanding guna link percuma yang panjang.
-                </p>
+            <!-- BUTANG MENU PHONE (Tiga Garis) -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- KOTAK MENU TENGAH -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <div class="navbar-nav mx-auto my-4 my-md-0 text-center gap-3 gap-md-0">
+                    <a href="index.html" class="nav-link text-secondary fw-bold small px-3">HOME</a>
+                    
+                    <!-- MENU SERVICES AKTIF (Garisan Biru) -->
+                    <a href="services.html" class="nav-link text-dark fw-bold px-3 active" style="border-bottom: 3px solid #00b4d8; width: fit-content; margin: auto;">SERVICES</a>
+                    
+                    <a href="about.html" class="nav-link text-secondary fw-bold small px-3">ABOUT</a>
+                    <a href="contact.html" class="nav-link text-secondary fw-bold small px-3">CONTACT</a>
+                </div>
+
+                <!-- PROFILE KANAN -->
+                <div class="d-flex align-items-center justify-content-center mt-3 mt-md-0 pb-3 pb-md-0">
+                    <span class="fw-bold small text-dark me-2">MENG_CREATIVE</span>
+                    <img src="img/Untitled Project - illustrationImage.png" class="rounded-circle border border-2" style="border-color: #00b4d8 !important; width: 35px; height: 35px; object-fit: cover;" alt="Logo Meng">
+                </div>
             </div>
-        </div>
-    </div>
 
-    <!-- 💰 3 KOTAK HARGA (Grid System) -->
-    <div class="row g-4 align-items-center">
-        
-        <!-- PAKEJ 1: BASIC PAGE -->
-        <div class="col-md-4">
-            <div class="card border-0 rounded-4 shadow-sm h-100 p-4 text-center" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.4) !important;">
-                <h5 class="fw-bold text-secondary text-uppercase">Basic (1-Page)</h5>
-                <h2 class="fw-bold my-3 text-dark">RM 299</h2>
-                <p class="text-muted small mb-4">Sesuai untuk landing page ringkas atau portfolio personal.</p>
-                <ul class="list-unstyled text-start small mb-4" style="color: #555;">
-                    <li class="mb-2">✔️ Laman Web 1 Muka Surat</li>
-                    <li class="mb-2">✔️ Design Moden & Responsive</li>
-                    <li class="mb-2">✔️ Butang WhatsApp Terus</li>
-                    <li class="mb-2 text-danger">❌ Tidak termasuk Domain</li>
-                </ul>
-                <a href="#contact" class="btn btn-outline-dark rounded-pill fw-bold w-100 mt-auto">PILIH BASIC</a>
+        </div>
+    </nav>
+
+    <!-- 2. KANDUNGAN UTAMA: SERVICES -->
+    <main class="flex-grow-1">
+        <section class="container py-5" id="services">
+            
+            <div class="text-center mb-5">
+                <h2 class="fw-black text-uppercase" style="color: #0077b6; letter-spacing: 2px;">Pilihan Pakej Web</h2>
+                <p class="text-secondary">Pilih pelan yang sesuai untuk meroketkan bisnes anda.</p>
             </div>
-        </div>
 
-        <!-- PAKEJ 2: PRO + DOMAIN (KOTAK TENGAH - KITA BUAT DIA MENONJOL) -->
-        <div class="col-md-4">
-            <div class="card border-0 rounded-4 shadow-lg h-100 p-4 text-center position-relative" style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border: 2px solid #00b4d8 !important; transform: scale(1.05);">
-                <!-- Tag Popular -->
-                <span class="badge rounded-pill position-absolute top-0 start-50 translate-middle px-3 py-2" style="background: linear-gradient(90deg, #00b4d8, #2a9d8f); color: white;">PALING LAKU</span>
+            <!-- BANNER INFO DOMAIN -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-10">
+                    <div class="card border-0 rounded-4 shadow-sm p-4 text-center" style="background: linear-gradient(135deg, rgba(0, 180, 216, 0.15), rgba(42, 157, 143, 0.15)); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.6) !important;">
+                        <h5 class="fw-bold" style="color: #0077b6;">🤔 Apa itu Domain & Kenapa Kena Ada?</h5>
+                        <p class="text-secondary mb-0 mt-2" style="font-size: 0.95rem; line-height: 1.6;">
+                            Bayangkan laman web anda adalah sebuah <strong>Rumah</strong> kedai. <br>
+                            <strong>Domain</strong> pula adalah <em>Alamat Rumah</em> tersebut (contoh: <code>www.kedai-anda.com</code>). 
+                            Tanpa domain, pelanggan tak jumpa kedai anda di internet! Memiliki domain sendiri membuatkan bisnes anda nampak <strong>10x ganda lebih profesional</strong> dan dipercayai berbanding guna link percuma yang panjang.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+           <!-- 💰 3 KOTAK HARGA (EDISI BAJET & DESIGN FOCUSED) -->
+            <div class="row g-4 align-items-center">
                 
-                <h5 class="fw-bold text-uppercase mt-2" style="color: #00b4d8;">Bisnes + Domain</h5>
-                <h2 class="fw-bold my-3 text-dark">RM 599</h2>
-                <p class="text-muted small mb-4">Lengkap semua untuk bisnes nampak profesional di Google.</p>
-                <ul class="list-unstyled text-start small mb-4" style="color: #555;">
-                    <li class="mb-2">✔️ Web Multi-Page (Max 4 Page)</li>
-                    <li class="mb-2">✔️ <strong>PERCUMA</strong> Domain (.com) 1 Tahun</li>
-                    <li class="mb-2">✔️ <strong>PERCUMA</strong> Hosting Laju 1 Tahun</li>
-                    <li class="mb-2">✔️ Basic SEO Setup (Mudah jumpa)</li>
-                </ul>
-                <!-- Butang ni sekarang akan trigger popup, bukan terus pergi ke contact -->
-<button type="button" class="btn text-white rounded-pill fw-bold w-100 mt-auto shadow-sm btn-sm" style="background: linear-gradient(180deg, #00b4d8 0%, #0077b6 100%);" data-bs-toggle="modal" data-bs-target="#disclaimerCombo">
-    PILIH COMBO
-</button>
-            </div>
-        </div>
-
-        <!-- PAKEJ 3: CUSTOM ORDER -->
-        <div class="col-md-4">
-            <div class="card border-0 rounded-4 shadow-sm h-100 p-4 text-center" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.4) !important;">
-                <h5 class="fw-bold text-secondary text-uppercase">Custom Order</h5>
-                <h2 class="fw-bold my-3 text-dark">Custom</h2>
-                <p class="text-muted small mb-4">Perlukan sistem kompleks atau kedai online (e-commerce)?</p>
-                <ul class="list-unstyled text-start small mb-4" style="color: #555;">
-                    <li class="mb-2">✔️ Sistem Database</li>
-                    <li class="mb-2">✔️ Fungsi Cart & Payment Gateway</li>
-                    <li class="mb-2">✔️ Design Ikut Citarasa 100%</li>
-                    <li class="mb-2">✔️ Harga bergantung pada spesifikasi</li>
-                </ul>
-                <a href="#contact" class="btn btn-outline-dark rounded-pill fw-bold w-100 mt-auto">BINCANG SEKARANG</a>
-            </div>
-        </div>
-
-    </div>
-</section>
-        <!-- MODAL DISCLAIMER PAKEJ COMBO -->
-        <div class="modal fade" id="disclaimerCombo" tabindex="-1" aria-labelledby="disclaimerLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <!-- Design kotak popup -->
-                <div class="modal-content rounded-4 border-0 shadow-lg" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);">
-                    
-                    <!-- Header Modal -->
-                    <div class="modal-header border-bottom-0 pb-0">
-                        <h5 class="modal-title fw-bold" id="disclaimerLabel" style="color: #0077b6;">📢 Info Penting Pakej Combo</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    
-                    <!-- Isi Kandungan Disclaimer -->
-                    <div class="modal-body text-secondary" style="font-size: 0.9rem; line-height: 1.7;">
-                        <p>Sebelum kita bermula, pastikan anda jelas dengan tawaran pakej ini:</p>
-                        <ul class="list-unstyled">
-                            <li class="mb-3">
-                                ✅ <strong>Apa Anda Dapat:</strong> Laman web 1 muka surat berserta pendaftaran nama Domain (.com) & Hosting untuk <strong>1 Tahun pertama</strong>.
-                            </li>
-                            <li class="mb-3">
-                                🔑 <strong>Serah Kunci (Handover):</strong> Akaun Hostinger akan didaftarkan atas nama & email anda. Selepas siap, username & password akan diserahkan 100% kepada anda. Kami tiada akses kepada kad bank anda.
-                            </li>
-                            <li class="mb-3 text-danger">
-                                ⚠️ <strong>Tahun Berikutnya:</strong> Kos pembaharuan (renewal) untuk tahun kedua dan seterusnya adalah tanggungjawab anda sepenuhnya (anggaran RM150+/tahun dibayar terus ke Hostinger).
-                            </li>
+                <!-- PAKEJ 1: BASIC -->
+                <div class="col-md-4">
+                    <div class="card border-0 rounded-4 shadow-sm h-100 p-4 text-center" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.4) !important;">
+                        <h5 class="fw-bold text-secondary text-uppercase">Basic (1-Page)</h5>
+                        <h2 class="fw-bold my-3 text-dark">RM 99</h2>
+                        <p class="text-muted small mb-4">Sesuai untuk landing page ringkas atau portfolio personal.</p>
+                        <ul class="list-unstyled text-start small mb-4" style="color: #555;">
+                            <li class="mb-2">✔️ Laman Web 1 Muka Surat</li>
+                            <li class="mb-2">✔️ Design Moden & Responsive</li>
+                            <li class="mb-2">✔️ Pautan Terus ke Telegram</li>
+                            <li class="mb-2 text-danger">❌ Tidak termasuk Domain & Hosting</li>
                         </ul>
+                        <a href="https://t.me/mengdev" target="_blank" class="btn btn-outline-dark rounded-pill fw-bold w-100 mt-auto text-decoration-none">PILIH BASIC</a>
                     </div>
-                    
-                    <!-- Footer Butang Tindakan -->
-                    <div class="modal-footer border-top-0 pt-0 justify-content-center">
-                        <button type="button" class="btn btn-light rounded-pill px-4 fw-bold text-secondary" data-bs-dismiss="modal">Batal</button>
-                        <!-- Tukar href ke link WhatsApp hang -->
-                        <!-- Tukar href ke link Telegram hang (Buang simbol @ pada username) -->
-                        <a href="https://t.me/mengdev" target="_blank" class="btn text-white rounded-pill px-4 fw-bold shadow-sm" style="background: linear-gradient(180deg, #2a9d8f 0%, #21867a 100%); text-decoration: none;">
-                            Saya Faham & Teruskan
-                        </a>
-                           
-                    </div>
+                </div>
 
+                <!-- PAKEJ 2: COMBO (KOTAK TENGAH) -->
+                <div class="col-md-4">
+                    <div class="card border-0 rounded-4 shadow-lg h-100 p-4 text-center position-relative" style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border: 2px solid #00b4d8 !important; transform: scale(1.05);">
+                        <span class="badge rounded-pill position-absolute top-0 start-50 translate-middle px-3 py-2" style="background: linear-gradient(90deg, #00b4d8, #2a9d8f); color: white;">PALING LAKU</span>
+                        <h5 class="fw-bold text-uppercase mt-2" style="color: #00b4d8;">Pakej Terima Kunci</h5>
+                        <h2 class="fw-bold my-3 text-dark">RM 150</h2>
+                        <p class="text-muted small mb-4">Pakej santai! Kami belikan hosting/domain terus untuk anda.</p>
+                        <ul class="list-unstyled text-start small mb-4" style="color: #555;">
+                            <li class="mb-2">✔️ Laman Web 1 Muka Surat (Siap Coding)</li>
+                            <li class="mb-2">✔️ <strong>TERMASUK</strong> Domain (.com) 1 Tahun</li>
+                            <li class="mb-2">✔️ <strong>TERMASUK</strong> Hosting Premium 1 Tahun</li>
+                            <li class="mb-2">✔️ Pengurusan Akaun A-Z Disediakan</li>
+                        </ul>
+                        <button type="button" class="btn text-white rounded-pill fw-bold w-100 mt-auto shadow-sm btn-sm" style="background: linear-gradient(180deg, #00b4d8 0%, #0077b6 100%);" data-bs-toggle="modal" data-bs-target="#disclaimerCombo">
+                            PILIH COMBO
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PAKEJ 3: CUSTOM -->
+                <div class="col-md-4">
+                    <div class="card border-0 rounded-4 shadow-sm h-100 p-4 text-center" style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.4) !important;">
+                        <h5 class="fw-bold text-secondary text-uppercase">Custom Design</h5>
+                        <h2 class="fw-bold my-3 text-dark">Custom</h2>
+                        <p class="text-muted small mb-4">Perlukan rekaan halaman bertingkat atau portfolio yang lebih besar?</p>
+                        <ul class="list-unstyled text-start small mb-4" style="color: #555;">
+                            <li class="mb-2">✔️ Web Multi-Page (Lebih dari 1 Halaman)</li>
+                            <li class="mb-2">✔️ Reka Bentuk Susun Atur Ikut Citarasa</li>
+                            <li class="mb-2">✔️ Struktur Grid & Navigasi Khas</li>
+                            <li class="mb-2">✔️ Harga mesra poket mengikut bilangan muka</li>
+                        </ul>
+                        <a href="https://t.me/mengdev" target="_blank" class="btn btn-outline-dark rounded-pill fw-bold w-100 mt-auto text-decoration-none">BINCANG SEKARANG</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL DISCLAIMER -->
+    <div class="modal fade" id="disclaimerCombo" tabindex="-1" aria-labelledby="disclaimerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow-lg" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <h5 class="modal-title fw-bold" id="disclaimerLabel" style="color: #0077b6;">📢 Info Penting Pakej Combo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-secondary" style="font-size: 0.9rem; line-height: 1.7;">
+                    <p>Sebelum kita bermula, pastikan anda jelas dengan tawaran pakej ini:</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">✅ <strong>Apa Anda Dapat:</strong> Laman web 1 muka surat berserta pendaftaran nama Domain (.com) & Hosting untuk <strong>1 Tahun pertama</strong>.</li>
+                        <li class="mb-3">🔑 <strong>Serah Kunci (Handover):</strong> Akaun Hostinger akan didaftarkan atas nama & email anda. Selepas siap, username & password akan diserahkan 100% kepada anda. Kami tiada akses kepada kad bank anda.</li>
+                        <li class="mb-3 text-danger">⚠️ <strong>Tahun Berikutnya:</strong> Kos pembaharuan (renewal) untuk tahun kedua dan seterusnya adalah tanggungjawab anda sepenuhnya (anggaran RM150+/tahun dibayar terus ke Hostinger).</li>
+                    </ul>
+                </div>
+                <!-- Footer Butang Tindakan Disesuaikan -->
+                <div class="modal-footer border-top-0 pt-0 d-flex flex-wrap justify-content-center gap-2">
+                    <button type="button" class="btn btn-light rounded-pill px-4 fw-bold text-secondary" data-bs-dismiss="modal">Batal</button>
+                    
+                    <!-- Butang Baru: Ketahui Lebih Lanjut (Link terus ke anchor Disclaimer) -->
+                    <a href="about.html#disclaimer-part" class="btn btn-outline-info rounded-pill px-4 fw-bold shadow-sm">Ketahui Lebih Lanjut</a>
+                    
+                    <a href="https://t.me/mengdev" target="_blank" class="btn text-white rounded-pill px-4 fw-bold shadow-sm" style="background: linear-gradient(180deg, #2a9d8f 0%, #21867a 100%);">
+                        Saya Faham & Teruskan
+                    </a>
                 </div>
             </div>
         </div>
-         <footer class="container-fluid d-flex justify-content-between align-items-center border-top pt-4 text-secondary small">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center border-top pt-4 text-secondary small gap-2 text-center mt-5">
         <div>&copy; 2026 meng.dev. All rights reserved.</div>
         <div>Bring Your Business to the Digital Era.</div>
     </footer>
 
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
