@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - meng.dev</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body class="min-vh-100 d-flex flex-column justify-content-between p-3 p-md-5" style="background: linear-gradient(135deg, #e0f7fa 0%, #f7f9fa 100%);">
@@ -13,28 +14,22 @@
     <nav class="navbar navbar-expand-md navbar-light bg-transparent py-2">
         <div class="container-fluid px-0">
             
-            <!-- LOGO UTAMA -->
             <a class="navbar-brand fw-black text-dark text-uppercase" href="index.html" style="letter-spacing: 6px; font-weight: 900; font-family: 'Segoe UI', sans-serif;">
                 — MENG.DEV —
             </a>
 
-            <!-- BUTANG MENU PHONE -->
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- KOTAK MENU TENGAH -->
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <div class="navbar-nav mx-auto my-4 my-md-0 text-center gap-3 gap-md-0">
                     <a href="index.html" class="nav-link text-secondary fw-bold small px-3">HOME</a>
                     <a href="services.html" class="nav-link text-secondary fw-bold small px-3">SERVICES</a>
                     <a href="about.html" class="nav-link text-secondary fw-bold small px-3">ABOUT</a>
-                    
-                    <!-- MENU CONTACT AKTIF (Garisan Biru) -->
                     <a href="contact.html" class="nav-link text-dark fw-bold px-3 active" style="border-bottom: 3px solid #00b4d8; width: fit-content; margin: auto;">CONTACT</a>
                 </div>
 
-                <!-- PROFILE -->
                 <div class="d-flex align-items-center justify-content-center mt-3 mt-md-0 pb-3 pb-md-0">
                     <span class="fw-bold small text-dark me-2">MENG_CREATIVE</span>
                     <img src="img/Untitled Project - illustrationImage.png" class="rounded-circle border border-2" style="border-color: #00b4d8 !important; width: 35px; height: 35px; object-fit: cover;" alt="Logo Meng">
@@ -53,76 +48,77 @@
                 <p class="text-secondary">Ada idea perniagaan tapi tak tahu nak mula dari mana? Hubungi kami sekarang.</p>
             </div>
 
-            <div class="row g-5 align-items-center">
+            <div class="row g-4 align-items-start">
                 
                 <!-- KOTAK KIRI: INFO DIRECT CONTACT -->
                 <div class="col-md-5 order-2 order-md-1">
                     
-                    <!-- Kad Telegram -->
-                    <div class="card border-0 rounded-4 shadow-sm p-4 mb-4" style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px);">
+                    <!-- Kad WhatsApp -->
+                    <div class="card border-0 rounded-4 shadow-sm p-4 mb-4" style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px); border-left: 5px solid #25D366 !important;">
                         <div class="d-flex align-items-center">
-                            <div class="fs-1 me-3">💬</div>
+                            <div class="fs-1 me-3 text-success"><i class="bi bi-whatsapp"></i></div>
                             <div>
-                                <h6 class="fw-bold mb-1 text-dark">Sembang Pantas</h6>
-                                <p class="text-secondary small mb-2">Respon dalam masa 1 jam</p>
-                                <a href="https://t.me/mengdev" target="_blank" class="text-decoration-none fw-bold" style="color: #00b4d8;">@mengdev (Telegram) ➔</a>
+                                <h6 class="fw-bold mb-1 text-dark">Sembang Rasmi (WhatsApp)</h6>
+                                <p class="text-secondary small mb-2">Tempahan & Pertanyaan Bisnes</p>
+                                <a href="https://wa.me/601XXXXXXXX" target="_blank" class="text-decoration-none fw-bold text-success">Mesej WhatsApp ➔</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Kad Email -->
-                    <div class="card border-0 rounded-4 shadow-sm p-4" style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px);">
+                    <!-- Kad Telegram -->
+                    <div class="card border-0 rounded-4 shadow-sm p-4" style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px); border-left: 5px solid #229ED9 !important;">
                         <div class="d-flex align-items-center">
-                            <div class="fs-1 me-3">✉️</div>
+                            <div class="fs-1 me-3" style="color: #229ED9;"><i class="bi bi-telegram"></i></div>
                             <div>
-                                <h6 class="fw-bold mb-1 text-dark">E-mel Rasmi</h6>
-                                <p class="text-secondary small mb-2">Untuk sebut harga (Quotation)</p>
-                                <a href="mailto:hello@meng.dev" class="text-decoration-none fw-bold text-secondary">hello@meng.dev</a>
+                                <h6 class="fw-bold mb-1 text-dark">Sembang Santai (Telegram)</h6>
+                                <p class="text-secondary small mb-2">Soalan Teknikal & Design</p>
+                                <a href="https://t.me/mengdev" target="_blank" class="text-decoration-none fw-bold" style="color: #229ED9;">@mengdev ➔</a>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
-                <form id="formTempahan">
+                <!-- KOTAK KANAN: BORANG TEMPAHAN -->
+                <div class="col-md-7 order-1 order-md-2">
+                    <div class="card border-0 rounded-4 shadow-sm p-4 p-md-5" style="background: rgba(255, 255, 255, 0.95);">
+                        <h5 class="fw-bold text-dark mb-4 border-bottom pb-3">Borang Pertanyaan Segera</h5>
+                        <form id="formTempahan">
                             <div class="row g-3">
-                                <!-- Tambah id="nama" -->
+                                
                                 <div class="col-md-6">
                                     <label class="form-label small fw-bold text-secondary">Nama Penuh</label>
                                     <input type="text" id="nama" class="form-control form-control-lg bg-light border-0" placeholder="Ali bin Abu" required>
                                 </div>
                                 
-                                <!-- Tambah id="telefon" -->
                                 <div class="col-md-6">
                                     <label class="form-label small fw-bold text-secondary">No. Telefon</label>
                                     <input type="tel" id="telefon" class="form-control form-control-lg bg-light border-0" placeholder="01X-XXXXXXX" required>
                                 </div>
                                 
-                                <!-- Tambah id="pakej" -->
                                 <div class="col-12">
                                     <label class="form-label small fw-bold text-secondary">Berminat dengan pakej mana?</label>
                                     <select id="pakej" class="form-select form-select-lg bg-light border-0">
                                         <option selected disabled>-- Pilih Pakej --</option>
-                                        <option value="Basic (RM99)">Basic (RM99)</option>
-                                        <option value="Pakej Terima Kunci (RM150)">Pakej Terima Kunci (RM150)</option>
+                                        <option value="Pakej Bajet (RM149)">Pakej Bajet (RM149)</option>
+                                        <option value="Pakej Terima Kunci (RM299)">Pakej Terima Kunci (RM299)</option>
                                         <option value="Custom Design">Custom Design</option>
                                     </select>
                                 </div>
 
-                                <!-- Tambah id="mesej" -->
                                 <div class="col-12">
                                     <label class="form-label small fw-bold text-secondary">Ceritakan sikit tentang bisnes anda</label>
-                                    <textarea id="mesej" class="form-control bg-light border-0" rows="4" placeholder="Saya jual kedai makan, nak buat web..."></textarea>
+                                    <textarea id="mesej" class="form-control bg-light border-0" rows="4" placeholder="Saya jual kedai makan, nak buat web untuk papar menu..."></textarea>
                                 </div>
 
-                                <!-- Tambah id="btnHantar" -->
                                 <div class="col-12 mt-4">
-                                    <button type="button" id="btnHantar" class="btn text-white rounded-pill fw-bold w-100 py-3 shadow" style="background: linear-gradient(90deg, #00b4d8, #2a9d8f);">
-                                        HANTAR PERTANYAAN VIA TELEGRAM
+                                    <!-- Butang Tukar ke WhatsApp -->
+                                    <button type="button" id="btnHantar" class="btn text-white rounded-pill fw-bold w-100 py-3 shadow" style="background: linear-gradient(90deg, #25D366, #128C7E);">
+                                        <i class="bi bi-whatsapp me-2"></i> HANTAR BORANG KE WHATSAPP
                                     </button>
                                 </div>
                             </div>
                         </form>
-
                     </div>
                 </div>
 
@@ -133,40 +129,38 @@
     <!-- FOOTER -->
     <footer class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center border-top pt-4 text-secondary small gap-2 text-center mt-5">
         <div>&copy; 2026 meng.dev. All rights reserved.</div>
-        <div>Bring Your Business to the Digital Era.</div>
+        <div>Proudly based in Johor, Malaysia.</div>
     </footer>
 
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-    <!-- Skrip Hantar ke Telegram -->
+
+    <!-- Skrip Hantar Borang ke WhatsApp -->
     <script>
         $(document).ready(function() {
             $('#btnHantar').click(function() {
-                // Tangkap data dari borang
                 var nama = $('#nama').val();
                 var telefon = $('#telefon').val();
                 var pakej = $('#pakej').val();
                 var mesej = $('#mesej').val();
 
-                // Check kalau ada kotak yang kosong
                 if(!nama || !telefon || !pakej || !mesej) {
-                    alert("Sila isi semua maklumat dahulu ya!");
+                    alert("Sila isi semua maklumat dahulu ya, bos!");
                     return;
                 }
 
-                // Cantumkan ayat untuk masuk Telegram
-                var ayat = "Salam meng.dev! Saya berminat nak tempah web.\n\n" +
-                           "Nama: " + nama + "\n" +
-                           "No. Telefon: " + telefon + "\n" +
-                           "Pakej Pilihan: " + pakej + "\n" +
-                           "Nota Tambahan: " + mesej;
+                var ayat = "Salam Meng.Dev! Saya berminat nak tempah website. Ini maklumat saya:\n\n" +
+                           "👤 *Nama:* " + nama + "\n" +
+                           "📱 *No. Telefon:* " + telefon + "\n" +
+                           "📦 *Pakej Pilihan:* " + pakej + "\n" +
+                           "💬 *Nota Tambahan:* " + mesej;
 
-                // Buka link Telegram
-                var linkTelegram = "https://t.me/mengdev?text=" + encodeURIComponent(ayat);
-                window.open(linkTelegram, '_blank');
+                // Ganti 601XXXXXXXX dengan nombor telefon hang
+                var linkWhatsApp = "https://wa.me/601XXXXXXXX?text=" + encodeURIComponent(ayat);
+                window.open(linkWhatsApp, '_blank');
             });
         });
     </script>
+</body>
 </html>
